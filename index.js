@@ -10,9 +10,9 @@ import {ScriptManager, Script, Federated} from '@callstack/repack/client';
 
 const resolveURL = Federated.createURLResolver({
   containers: {
-    app1: 'http://localhost:9000/[name][ext]',
-    app2: 'http://localhost:9001/[name][ext]',
-    module1: 'http://localhost:9002/[name][ext]',
+    app1: __DEV__
+      ? 'http://localhost:9000/[name][ext]'
+      : 'https://github.com/ra1nj/RepackApp1/releases/download/app1-ios@0.0.1/[name][ext]',
   },
 });
 

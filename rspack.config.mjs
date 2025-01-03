@@ -174,6 +174,7 @@ export default (env) => {
                 dts: false,
                 remotes: {
                     app1: `app1@http://localhost:9000/${platform}/mf-manifest.json`,
+                    food_quality:`food_quality@http://localhost:9002/${platform}/mf-manifest.json`,
 
                 },
                 /**

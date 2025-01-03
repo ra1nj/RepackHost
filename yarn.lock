@@ -2821,13 +2821,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@livingdesign/tokens@npm:0.74.0":
-  version: 0.74.0
-  resolution: "@livingdesign/tokens@npm:0.74.0"
-  checksum: 10/02575bd34b05931a7d1ae44c20ec4dcb52775cd4bbe3844eaa712c99ff9e88bd9963c89b839dbeaf16a5680b24d4f71c5123140f96c887a03b95d76266b9a04d
-  languageName: node
-  linkType: hard
-
 "@lukeed/ms@npm:^2.0.1":
   version: 2.0.2
   resolution: "@lukeed/ms@npm:2.0.2"
@@ -4154,44 +4147,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@walmart/gtp-shared-components@npm:^2.2.4":
-  version: 2.2.4
-  resolution: "@walmart/gtp-shared-components@npm:2.2.4"
-  dependencies:
-    "@livingdesign/tokens": "npm:0.74.0"
-    "@walmart/gtp-shared-icons": "npm:1.0.10"
-    lodash: "npm:^4.17.15"
-    moment: "npm:^2.29.4"
-    react-keyed-flatten-children: "npm:^1.3.0"
-    react-native-modal: "npm:^13.0.1"
-  peerDependencies:
-    "@react-native-community/datetimepicker": "*"
-    "@react-native-picker/picker": "*"
-    react: "*"
-    react-native: "*"
-    react-native-device-info: "*"
-    react-native-drop-shadow: "*"
-  bin:
-    installFonts: scripts/installFonts
-    runCodemods: scripts/runCodemods
-  checksum: 10/266ad548348e911d39b55a11a3cb75f1c79c29b6c47e0ec52ad1dac0974117ac2eb29540ef6989712b4baecc7b4385f34e6939c2ed1ebd42f57caef7bd34e241
-  languageName: node
-  linkType: hard
-
-"@walmart/gtp-shared-icons@npm:1.0.10":
-  version: 1.0.10
-  resolution: "@walmart/gtp-shared-icons@npm:1.0.10"
-  dependencies:
-    "@livingdesign/tokens": "npm:0.74.0"
-    lodash: "npm:^4.17.15"
-    moment: "npm:^2.27.0"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 10/6b4dbd90d7594b8d7893809ee853a9da02a98bab4406a4f5f063b85a0761f7e4e3c78ce00602836fdc67c13169c054d71307dc00fa53fdcf30581bd432c2ae4e
-  languageName: node
-  linkType: hard
-
 "@webassemblyjs/ast@npm:1.12.1, @webassemblyjs/ast@npm:^1.12.1":
   version: 1.12.1
   resolution: "@webassemblyjs/ast@npm:1.12.1"
@@ -4378,7 +4333,6 @@ __metadata:
     "@swc/helpers": "npm:^0.5.15"
     "@types/react": "npm:^18.2.6"
     "@types/react-test-renderer": "npm:^18.0.0"
-    "@walmart/gtp-shared-components": "npm:^2.2.4"
     babel-jest: "npm:^29.6.3"
     babel-loader: "npm:^9.1.3"
     babel-plugin-syntax-hermes-parser: "npm:^0.26.0"
@@ -9208,7 +9162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.21":
+"lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10/c08619c038846ea6ac754abd6dd29d2568aa705feb69339e836dfa8d8b09abbb2f859371e86863eda41848221f9af43714491467b5b0299122431e202bb0c532
@@ -9811,13 +9765,6 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: 10/d71b8dcd4b5af2fe13ecf3bd24070263489404fe216488c5ba7e38ece1f54daf219e72a833a3a2dc404331e870e9f44963a33399589490956bff003a3404d3b2
-  languageName: node
-  linkType: hard
-
-"moment@npm:^2.27.0, moment@npm:^2.29.4":
-  version: 2.30.1
-  resolution: "moment@npm:2.30.1"
-  checksum: 10/ae42d876d4ec831ef66110bdc302c0657c664991e45cf2afffc4b0f6cd6d251dde11375c982a5c0564ccc0fa593fc564576ddceb8c8845e87c15f58aa6baca69
   languageName: node
   linkType: hard
 
@@ -10618,7 +10565,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -10723,7 +10670,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1, react-is@npm:^16.8.6":
+"react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10/5aa564a1cde7d391ac980bedee21202fc90bdea3b399952117f54fb71a932af1e5902020144fb354b4690b2414a0c7aafe798eb617b76a3d441d956db7726fdf
@@ -10734,26 +10681,6 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 10/73b36281e58eeb27c9cc6031301b6ae19ecdc9f18ae2d518bdb39b0ac564e65c5779405d623f1df9abf378a13858b79442480244bd579968afc1faf9a2ce5e05
-  languageName: node
-  linkType: hard
-
-"react-keyed-flatten-children@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "react-keyed-flatten-children@npm:1.3.0"
-  dependencies:
-    react-is: "npm:^16.8.6"
-  peerDependencies:
-    react: ">=15.0.0"
-  checksum: 10/3bb042bb7cd48909491a5f92b8e7b2fb0417d69ad24bf04dbe1ed7a308cc7dfe6e3c9b5550e7b9016ee6bef61829b92e7f3a355ed1b867affd251bd518bcdd90
-  languageName: node
-  linkType: hard
-
-"react-native-animatable@npm:1.3.3":
-  version: 1.3.3
-  resolution: "react-native-animatable@npm:1.3.3"
-  dependencies:
-    prop-types: "npm:^15.7.2"
-  checksum: 10/be7552f9eca8a881e64ce4650849da4a20d68023a445288d609e4dce0ad454ebccefbe52a0cd4ee412782731174b84cdd89acbb384107ad1ed2af05441593ed3
   languageName: node
   linkType: hard
 
@@ -10768,19 +10695,6 @@ __metadata:
     "@types/react-native":
       optional: true
   checksum: 10/1c1726b8f270011a8f19486899e01d8e33d93f476d2673046efc45fc165db832b16e81a6832514966ac9e9eed35a3153c784a46b6cb996e218fa047d1c7b8c82
-  languageName: node
-  linkType: hard
-
-"react-native-modal@npm:^13.0.1":
-  version: 13.0.1
-  resolution: "react-native-modal@npm:13.0.1"
-  dependencies:
-    prop-types: "npm:^15.6.2"
-    react-native-animatable: "npm:1.3.3"
-  peerDependencies:
-    react: "*"
-    react-native: ">=0.65.0"
-  checksum: 10/7b9096127f5195e28bf8016bed5e8760e060e533358ba41f829605233b7f0e9e7e94941884c9fdb0d14d288c02a2944b516754477af24b0173c57777f2aa5018
   languageName: node
   linkType: hard
 

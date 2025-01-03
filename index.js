@@ -16,27 +16,27 @@ const resolveURL = Federated.createURLResolver({
   },
 });
 
-ScriptManager.shared.addResolver(async (scriptId, caller) => {
-  console.log('scriptId:', scriptId);
-  console.log('caller:', caller);
-  let url;
-  if (caller === 'main') {
-    url = Script.getDevServerURL(scriptId);
-  } else {
-    url = resolveURL(scriptId, caller);
-  }
-
-  if (!url) {
-    return undefined;
-  }
-
-  return {
-    url,
-    cache: false, // For development
-    query: {
-      platform: Platform.OS,
-    },
-  };
-});
+// ScriptManager.shared.addResolver(async (scriptId, caller) => {
+//   console.log('scriptId:', scriptId);
+//   console.log('caller:', caller);
+//   let url;
+//   if (caller === 'main') {
+//     url = Script.getDevServerURL(scriptId);
+//   } else {
+//     url = resolveURL(scriptId, caller);
+//   }
+//
+//   if (!url) {
+//     return undefined;
+//   }
+//
+//   return {
+//     url,
+//     cache: false, // For development
+//     query: {
+//       platform: Platform.OS,
+//     },
+//   };
+// });
 
 AppRegistry.registerComponent(appName, () => App);

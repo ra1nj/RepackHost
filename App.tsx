@@ -7,9 +7,8 @@
 
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
-import {Federated} from '@callstack/repack/client';
 
-const App1 = React.lazy(() => Federated.importModule('app1', './App'));
+const App1 = React.lazy(() => import('app1/App'));
 
 function App(): React.JSX.Element {
   return (

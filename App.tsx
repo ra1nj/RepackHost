@@ -9,14 +9,13 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
 
 const App1 = React.lazy(() => import('app1/App'));
-const App2 = React.lazy(() => import('food_quality/App'));
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaView>
       <Text>Host App</Text>
       <React.Suspense fallback={<Text>Loading app1...</Text>}>
-        <App2 />
+        <App1 />
       </React.Suspense>
     </SafeAreaView>
   );

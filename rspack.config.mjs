@@ -1,9 +1,9 @@
-import { createRequire } from 'node:module';
+import {createRequire} from 'node:module';
 import path from 'node:path';
 import * as Repack from '@callstack/repack';
 
 const dirname = Repack.getDirname(import.meta.url);
-const { resolve } = createRequire(import.meta.url);
+const {resolve} = createRequire(import.meta.url);
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
@@ -78,7 +78,7 @@ export default (env) => {
             path: path.join(dirname, 'build/generated', platform),
             filename: 'index.bundle',
             chunkFilename: '[name].chunk.bundle',
-            publicPath: Repack.getPublicPath({ platform, devServer }),
+            publicPath: Repack.getPublicPath({platform, devServer}),
         },
         /** Configures optimization of the built bundle. */
         optimization: {
@@ -92,6 +92,15 @@ export default (env) => {
                 Repack.REACT_NATIVE_LOADING_RULES,
                 Repack.NODE_MODULES_LOADING_RULES,
                 Repack.FLOW_TYPED_MODULES_LOADING_RULES,
+                {
+                    test: /\.[jt]sx?$/,
+                    include: [
+                        /node_modules(.*[/\\])+react-native-reanimated/,
+                        /node_modules(.*[/\\])+react-native-draggable-flatlist/,
+                    ],
+                    type: 'javascript/auto',
+                    use: 'babel-loader',
+                },
                 /** Here you can adjust loader that will process your files. */
                 {
                     test: /\.[jt]sx?$/,
@@ -185,13 +194,17 @@ export default (env) => {
                     react: {
                         singleton: true,
                         eager: true,
-                        requiredVersion: "18.2.0",
+                        requiredVersion: "18.3.1",
                     },
                     'react-native': {
                         singleton: true,
                         eager: true,
-                        requiredVersion: '0.74.5',
+                        requiredVersion: '0.76.2',
                     },
+                    "react-native-gesture-handler": {singleton: true, eager: true, requiredVersion: "^2.21.2",},
+                    "react-native-draggable-flatlist": {singleton: true, eager: true, requiredVersion: "^4.0.1",},
+                    "react-native-reanimated": {singleton: true, eager: true, requiredVersion: "^3.16.6",},
+                    "@react-native-picker/picker": {singleton: true, eager: true, requiredVersion: "^2.10.2",}
                 },
             }),
         ],

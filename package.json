@@ -11,16 +11,20 @@
   },
   "dependencies": {
     "@module-federation/enhanced": "^0.8.7",
+    "@react-native-picker/picker": "^2.10.2",
     "react": "18.3.1",
     "react-native": "0.76.2",
+    "react-native-draggable-flatlist": "^4.0.1",
     "react-native-error-boundary": "^1.2.4",
-    "react-native-inappbrowser-reborn": "^3.7.0"
+    "react-native-gesture-handler": "^2.21.2",
+    "react-native-inappbrowser-reborn": "^3.7.0",
+    "react-native-reanimated": "^3.16.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
-    "@callstack/repack": "5.0.0-rc.2",
+    "@callstack/repack": "5.0.0-rc.5",
     "@react-native-community/cli": "15.0.1",
     "@react-native-community/cli-platform-android": "15.0.1",
     "@react-native-community/cli-platform-ios": "15.0.1",

@@ -192,6 +192,16 @@ export default (env) => {
                         eager: true,
                         requiredVersion: '0.74.5',
                     },
+                    'react-native-quick-sqlite': {
+                        singleton: true,
+                        eager: true,
+                        requiredVersion: '^8.2.7',
+                    },
+                    'typeorm': {
+                        singleton: true,
+                        eager: true,
+                        requiredVersion: '^0.3.20',
+                    },
                 },
             }),
         ],

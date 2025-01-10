@@ -13,26 +13,15 @@ import {Picker} from '@react-native-picker/picker';
 const App1 = React.lazy(() => import('app1/App'));
 
 function App(): React.JSX.Element {
-  const [selectedLanguage, setSelectedLanguage] = useState();
   return (
-      // <GestureHandlerRootView style={{flex: 1}}>
+      <GestureHandlerRootView style={{flex: 1}}>
         <SafeAreaView>
           <Text>Host App</Text>
-          <View style={{height: 300, width: 300}}>
-            <Picker
-                selectedValue={selectedLanguage}
-                onValueChange={(itemValue, itemIndex) =>
-                    setSelectedLanguage(itemValue)
-                }>
-              <Picker.Item label="Java" value="java" />
-              <Picker.Item label="JavaScript" value="js" />
-            </Picker>
-          </View>
           <React.Suspense fallback={<Text>Loading app1...</Text>}>
             <App1 />
           </React.Suspense>
         </SafeAreaView>
-      // </GestureHandlerRootView>
+      </GestureHandlerRootView>
   );
 }
 

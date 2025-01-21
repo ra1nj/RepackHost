@@ -2220,9 +2220,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@callstack/repack-dev-server@npm:5.0.0-rc.2":
-  version: 5.0.0-rc.2
-  resolution: "@callstack/repack-dev-server@npm:5.0.0-rc.2"
+"@callstack/repack-dev-server@npm:5.0.0-rc.7":
+  version: 5.0.0-rc.7
+  resolution: "@callstack/repack-dev-server@npm:5.0.0-rc.7"
   dependencies:
     "@babel/code-frame": "npm:^7.16.7"
     "@fastify/middie": "npm:^8.3.0"
@@ -2239,16 +2239,18 @@ __metadata:
   peerDependenciesMeta:
     "@react-native-community/cli-server-api":
       optional: true
-  checksum: 10/0df0986b95eafbfc4d8fd302abf7eb475cd6018585f6b4b34b4d296f29c929f6d7db0bd13b0603e0d141d2414ab8e0af28d695b9f3e11027f0b087041ce69efc
+  checksum: 10/b739f347db07f14f5ca889d8f1e3517a1539f858b129f03daba4fe0bbf11234741b1f7f11e7620cfd27dd1531df4178b6763d4b8a45f17280f8c120992cea7bd
   languageName: node
   linkType: hard
 
-"@callstack/repack@npm:5.0.0-rc.2":
-  version: 5.0.0-rc.2
-  resolution: "@callstack/repack@npm:5.0.0-rc.2"
+"@callstack/repack@npm:5.0.0-rc.7":
+  version: 5.0.0-rc.7
+  resolution: "@callstack/repack@npm:5.0.0-rc.7"
   dependencies:
-    "@callstack/repack-dev-server": "npm:5.0.0-rc.2"
+    "@callstack/repack-dev-server": "npm:5.0.0-rc.7"
     "@discoveryjs/json-ext": "npm:^0.5.7"
+    "@rspack/plugin-react-refresh": "npm:1.0.0"
+    babel-loader: "npm:^9.2.1"
     colorette: "npm:^2.0.20"
     dedent: "npm:^0.7.0"
     events: "npm:^3.3.0"
@@ -2268,7 +2270,6 @@ __metadata:
     "@react-native-community/cli": "*"
     "@react-native-community/cli-types": "*"
     "@rspack/core": ">=1"
-    "@rspack/plugin-react-refresh": ">=1"
     react-native: ">=0.74"
     webpack: ">=5.90"
   peerDependenciesMeta:
@@ -2278,7 +2279,7 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: 10/4b977dbf9eac90619119f59666e4c5e05a9bb7504ab9c8c352b02e87d4604fa04d350ae0c78f3575c06f3b9ed54d35fd2d5071b39899271cddab9bcd9feec25d
+  checksum: 10/3f465ea68de6ee3a03042eaf94cc44ffea6413852bccb5da7fd268359c07db24771de46035a4af7b7127351581657be576091bcaa7f722aadb51e81023a7a0a0
   languageName: node
   linkType: hard
 
@@ -3708,6 +3709,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rspack/plugin-react-refresh@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@rspack/plugin-react-refresh@npm:1.0.0"
+  dependencies:
+    error-stack-parser: "npm:^2.0.6"
+    html-entities: "npm:^2.1.0"
+  peerDependencies:
+    react-refresh: ">=0.10.0 <1.0.0"
+  peerDependenciesMeta:
+    react-refresh:
+      optional: true
+  checksum: 10/09d76ba4ac93c012a8a90fb0a6aef717ec0fd78dc620d1f0a7e26493cb696a1c9ba20d639f9eed57074a180fc58226be6b084b172f668fe4bbe2f13e6982fe35
+  languageName: node
+  linkType: hard
+
 "@rspack/plugin-react-refresh@npm:^1.0.1":
   version: 1.0.1
   resolution: "@rspack/plugin-react-refresh@npm:1.0.1"
@@ -4319,7 +4335,7 @@ __metadata:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.3"
     "@babel/runtime": "npm:^7.25.0"
-    "@callstack/repack": "npm:5.0.0-rc.2"
+    "@callstack/repack": "npm:5.0.0-rc.7"
     "@module-federation/enhanced": "npm:^0.8.7"
     "@react-native-community/cli": "npm:15.0.1"
     "@react-native-community/cli-platform-android": "npm:15.0.1"
@@ -4842,6 +4858,19 @@ __metadata:
     "@babel/core": ^7.12.0
     webpack: ">=5"
   checksum: 10/7086e678273b5d1261141dca84ed784caab9f7921c8c24d7278c8ee3088235a9a9fd85caac9f0fa687336cb3c27248ca22dbf431469769b1b995d55aec606992
+  languageName: node
+  linkType: hard
+
+"babel-loader@npm:^9.2.1":
+  version: 9.2.1
+  resolution: "babel-loader@npm:9.2.1"
+  dependencies:
+    find-cache-dir: "npm:^4.0.0"
+    schema-utils: "npm:^4.0.0"
+  peerDependencies:
+    "@babel/core": ^7.12.0
+    webpack: ">=5"
+  checksum: 10/f1f24ae3c22d488630629240b0eba9c935545f82ff843c214e8f8df66e266492b7a3d4cb34ef9c9721fb174ca222e900799951c3fd82199473bc6bac52ec03a3
   languageName: node
   linkType: hard
 
@@ -7464,7 +7493,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-entities@npm:^2.5.2":
+"html-entities@npm:^2.1.0, html-entities@npm:^2.5.2":
   version: 2.5.2
   resolution: "html-entities@npm:2.5.2"
   checksum: 10/4ec12ebdf2d5ba8192c68e1aef3c1e4a4f36b29246a0a88464fe278a54517d0196d3489af46a3145c7ecacb4fc5fd50497be19eb713b810acab3f0efcf36fdc2
